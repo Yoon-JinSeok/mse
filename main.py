@@ -183,7 +183,6 @@ if st.session_state.step >= 2 and len(st.session_state.points) >= 2:
         mse_code = (
             "def MSE(y, y_hat):\n"
             "    return np.mean((y - y_hat)**2)\n\n"
-            "print('추세선의 손실함수 값 :', MSE(y, 4/3*x))"
         )
         st.code(mse_code, language="python")
 
